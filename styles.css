@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+  .button {
+    position: relative;
+    background-color: #33418C;
+    color: #e8e8e8;
+    font-size: 17px;
+    font-weight: 600;
+    width: 150px;
+    height: 60px;
+    border-radius: 50em;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button::before {
+    content: ">";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: 50em;
+    background: #33418C;
+    transform: translate(100%, 0%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button::after {
+    content: "NEXT STEP";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: 50em;
+    transform: translate(0%,-100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    transform: translate(0%, 0%);
+  }
+  
+  .button:hover::after {
+    transform: translate(-100%,-100%);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  
+
+
+  .button2 {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    background: transparent;
+   }
+   .button2::before{
+    content: "Play";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    border-radius: 100%;
+    
+   }
+   
+   .default-btn,.hover-btn {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    padding-left: 60px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all .3s ease;
+    border: none;
+   }
+   
+   .hover-btn {
+    position: absolute;
+    inset: 0;
+    transform: translate(0%,100%);
+   }
+   
+   .default-btn span {
+    color: black;
+   }
+   
+   .hover-btn span {
+    color: black;
+   }
+   
+   .button2:hover .default-btn {
+    transform: translate(0%,-100%);
+   }
+   
+   .button2:hover .hover-btn {
+    transform: translate(0%,0%);
+   }
+
+   .footer{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px 18px;
+    background: #33408cd7;
+    border-radius: 18px;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+   }
+   .footer:hover{
+    background: #33408cb0;
+   }
+
+   h1,h1 span{
+    color: black;
+    
+   }
